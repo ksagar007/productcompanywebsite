@@ -34,38 +34,662 @@ Validate the HTML code.
 
 Publish the website in the given URL.
 
+## Color scheme:
+__Primary color:__ White <br />
+__Secondary color:__ Black <br />
+__Tertiary color:__ Grey
+
 ## PROGRAM :
-layout.css
-```css
+
+### home.html:
+```
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Apple</title>
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}" />
+    <link rel="icon" href="https://alchemyimmersive.com/wp-content/uploads/sites/4/2020/04/apple-logo-transparent.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="banner"></div>
+      <div class="menu">
+        <div class="menuitem fill"><a href="/home">Home</a></div>
+        <div class="menuitem fill"><a href="/about">About</a></div>
+        <div class="menuitem fill"><a href="/products">Products</a></div>
+        <div class="menuitem fill"><a href="/people">People</a></div>
+        <div class="menuitem fill"><a href="/contact">Contact Us</a></div>
+      </div>
+      <div class="content">
+        <h1 id="home-h" >THINK DIFFERENT.</h1>
+        <p id="home-p">Everything is designed. Few things are designed well. And those are designed by us.</p>
+      </div>
+      <div class="footer">
+        &#169; 2021 Apple Lt., Developed by Roghith.
+      </div>
+    </div>
+  </body>
+</html>
+
+```
+
+### about.html:
+```
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Apple</title>
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}" />
+    <link rel="icon" href="https://alchemyimmersive.com/wp-content/uploads/sites/4/2020/04/apple-logo-transparent.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="banner"></div>
+      <div class="menu">
+        <div class="menuitem fill"><a href="/home">Home</a></div>
+        <div class="menuitem fill"><a href="/about">About</a></div>
+        <div class="menuitem fill"><a href="/products">Products</a></div>
+        <div class="menuitem fill"><a href="/people">People</a></div>
+        <div class="menuitem fill"><a href="/contact">Contact Us</a></div>
+      </div>
+      <div class="content p-con">
+        <h1 style="margin:auto;margin-top:50px;font-size:50px;">About Us</h1><br><br>
+        <p id="about-p">Apple is an American technology company founded by Steve Jobs, Steve Wozniak, and Ronald Wayne in April 1976. Incorporated in 1977, the company was one of the early manufacturers of personal computing devices with graphical user interface. Over the years, the company also forayed into other consumer electronics segments like mobile communication devices, digital music players, notebooks, and wearables. The company also develops and markets a range of related software and services, accessories, and networking solutions. Currently, the company’s chief executive officer (CEO) is Timothy Donald Cook, commonly known as Tim Cook.
+            <br><br>
+            From smart wearables to digital content streaming platforms, Apple offers a wide range of products and services within a closed ecosystem. Its products include iMac desktops, MacBook notebooks, iPhone mobile devices, iPad tablets, iPod digital multimedia devices, Apple Watch and Apple TV. The services include iOS operating system for mobile devices, macOS operating system for notebooks and desktops, iCloud online storage, tvOS operating system for Apple TV, watchOS operating system for Apple Watch, iTunes for digital content services, Apple Pay digital payment service, Apple Music for online multimedia streaming, and Apple News.
+            <br><br>
+            Apple has been known to be on the forefront of innovation. The company was among the first to develop an app-based ecosystem for smartphones. It was the first smartphone maker to introduce touchID — a fingerprint scanner module to unlock a device — and use 64-bit processors, both of which were later also adopted by most other smartphone manufacturers.
+            <br><br>
+            Apple’s services have so far been exclusive to its own products. However, in March 2019, the company announced that its subscription-based TV Plus service will be available as an app on televisions from other brands, too. This is for the first time that Apple has enabled its ecosystem service to work on products from other brands, and more announcements of similar nature are expected in future.
+            <br><br>
+            In 2019, Apple also settled its long-pending legal battle with American chipmaker Qualcomm. The move came after the company found itself in a tight spot securing 5G chips to power its future devices. With Qualcomm on board, the company is expected to bring its first 5G-ready smartphone by 2020.</p>
+            <br><br>
+      </div>
+      <div class="footer">
+        &#169; 2021 Apple Lt., Developed by Roghith.
+      </div>
+    </div>
+  </body>
+</html>
+
+```
+
+### people.html:
+```
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Apple</title>
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}" />
+    <link rel="icon" href="https://alchemyimmersive.com/wp-content/uploads/sites/4/2020/04/apple-logo-transparent.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="banner"></div>
+        <div class="menu">
+        <div class="menuitem fill"><a href="/home">Home</a></div>
+        <div class="menuitem fill"><a href="/about">About</a></div>
+        <div class="menuitem fill"><a href="/products">Products</a></div>
+        <div class="menuitem fill"><a href="/people">People</a></div>
+        <div class="menuitem fill"><a href="/contact">Contact Us</a></div>
+      </div>
+      <div class="content p-con">
+        <h1 style="margin:auto;margin-top:50px;font-size:50px;">People</h1>
+        <div class="p-page">
+            <div class="profile-card">
+                <div class="profile-card-header">
+                    <div class="profile-image" style="background-image: url(https://pm1.narvii.com/7721/6550eae21d1637c54ac4f4ff15bea4010f728cc5r1-554-554v2_hq.jpg);"></div>
+            
+                    <div class="profile-info">
+                        <h3 class="profile-name">Jonny Sins</h3>
+                        <p class="profile-desc">All Rounder</p>
+                    </div>
+                </div>
+                <div class="profile-card-body">
+                    <ul class="status">
+                        <li>
+                            <span class="status-value">751</span>
+                            <span class="status-text">Posts</span>
+                        </li>
+            
+                        <li>
+                            <span class="status-value">1.8m</span>
+                            <span class="status-text">Followers</span>
+                        </li>
+            
+                        <li>
+                            <span class="status-value">4</span>
+                            <span class="status-text">Following</span>
+                        </li>
+                    </ul>
+            
+                    <div class="action">
+                        <button class="btn btn-pink">Follow</button>
+                        <button class="btn btn-gray-outline">Message</button>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-card-header">
+                    <div class="profile-image" ></div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Powervel</h3>
+                        <p class="profile-desc">Developer/Conent Creator</p>
+                    </div>
+                </div>
+                <div class="profile-card-body">
+                    <ul class="status">
+                        <li>
+                            <span class="status-value">532</span>
+                            <span class="status-text">Posts</span>
+                        </li>
+            
+                        <li>
+                            <span class="status-value">1.5m</span>
+                            <span class="status-text">Followers</span>
+                        </li>
+            
+                        <li>
+                            <span class="status-value">423</span>
+                            <span class="status-text">Following</span>
+                        </li>
+                    </ul>
+            
+                    <div class="action">
+                        <button class="btn btn-pink">Follow</button>
+                        <button class="btn btn-gray-outline">Message</button>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-card-header">
+                    <div class="profile-image" style="background-image: url('https://m.media-amazon.com/images/M/MV5BNzg1MTUyNDYxOF5BMl5BanBnXkFtZTgwNTQ4MTE2MjE@._V1_.jpg');"></div>
+            
+                    <div class="profile-info">
+                        <h3 class="profile-name">RDJ</h3>
+                        <p class="profile-desc">Genius, billionaire,philanthropist.</p>
+                    </div>
+                </div>
+                 <div class="profile-card-body">
+                    <ul class="status">
+                        <li>
+                            <span class="status-value">532</span>
+                            <span class="status-text">Posts</span>
+                        </li>
+            
+                        <li>
+                            <span class="status-value">1.5m</span>
+                            <span class="status-text">Followers</span>
+                        </li>
+            
+                        <li>
+                            <span class="status-value">423</span>
+                            <span class="status-text">Following</span>
+                        </li>
+                    </ul>
+            
+                    <div class="action">
+                        <button class="btn btn-pink">Follow</button>
+                        <button class="btn btn-gray-outline">Message</button>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-card-header">
+                    <div class="profile-image" style="background-image: url('https://file1.telestar.fr/var/telestar/storage/images/3/3/2/3/3323904/chris-evans-comment-failli-refuser-role-vie.jpg?alias=exact1024x768_l');"></div>
+            
+                    <div class="profile-info">
+                        <h3 class="profile-name">Cris Evans</h3>
+                        <p class="profile-desc">Conent Creator</p>
+                    </div>
+                </div>
+                <div class="profile-card-body">
+                    <ul class="status">
+                        <li>
+                            <span class="status-value">532</span>
+                            <span class="status-text">Posts</span>
+                        </li>
+            
+                        <li>
+                            <span class="status-value">1.5m</span>
+                            <span class="status-text">Followers</span>
+                        </li>
+            
+                        <li>
+                            <span class="status-value">423</span>
+                            <span class="status-text">Following</span>
+                        </li>
+                    </ul>
+            
+                    <div class="action">
+                        <button class="btn btn-pink">Follow</button>
+                        <button class="btn btn-gray-outline">Message</button>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-card-header">
+                    <div class="profile-image" style="background-image: url('https://image.gala.de/21743318/t/N_/v12/w960/r0.6667/-/elizabeth-olsen.jpg');"></div>
+            
+                    <div class="profile-info">
+                        <h3 class="profile-name">Elizabeth Olsen</h3>
+                        <p class="profile-desc">Developer</p>
+                    </div>
+                </div>
+                <div class="profile-card-body">
+                    <ul class="status">
+                        <li>
+                            <span class="status-value">532</span>
+                            <span class="status-text">Posts</span>
+                        </li>
+            
+                        <li>
+                            <span class="status-value">1.5m</span>
+                            <span class="status-text">Followers</span>
+                        </li>
+            
+                        <li>
+                            <span class="status-value">423</span>
+                            <span class="status-text">Following</span>
+                        </li>
+                    </ul>
+            
+                    <div class="action">
+                        <button class="btn btn-pink">Follow</button>
+                        <button class="btn btn-gray-outline">Message</button>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-card-header">
+                    <div class="profile-image" style="background-image: url('https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/800/Bruce-Banner.The-Incredible-Hulk.webp');"></div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Bruce Banner</h3>
+                        <p class="profile-desc">Scientist</p>
+                    </div>
+                </div>
+                <div class="profile-card-body">
+                    <ul class="status">
+                        <li>
+                            <span class="status-value">532</span>
+                            <span class="status-text">Posts</span>
+                        </li>
+            
+                        <li>
+                            <span class="status-value">1.5m</span>
+                            <span class="status-text">Followers</span>
+                        </li>
+            
+                        <li>
+                            <span class="status-value">423</span>
+                            <span class="status-text">Following</span>
+                        </li>
+                    </ul>
+            
+                    <div class="action">
+                        <button class="btn btn-pink">Follow</button>
+                        <button class="btn btn-gray-outline">Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="footer">
+        &#169; 2021 Apple Lt., Developed by Roghith.
+      </div>
+    </div>
+  </body>
+</html>
+
+```
+
+### products.html:
+```
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Apple</title>
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}" />
+    <link rel="icon" href="https://alchemyimmersive.com/wp-content/uploads/sites/4/2020/04/apple-logo-transparent.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="banner"></div>
+      <div class="menu">
+        <div class="menuitem fill"><a href="/home">Home</a></div>
+        <div class="menuitem fill"><a href="/about">About</a></div>
+        <div class="menuitem fill"><a href="/products">Products</a></div>
+        <div class="menuitem fill"><a href="/people">People</a></div>
+        <div class="menuitem fill"><a href="/contact">Contact Us</a></div>
+      </div>
+      <div class="content p-con" style="border:none">
+        <h1 style="margin:auto;margin-top:40px;font-size:50px;">Products</h1>
+        <div class="p-page">
+          <div class="product-card">
+              <div class="badge new">New</div>
+              <div class="product-tumb">
+                <img src="{% static 'img/pro/13promax.jpg' %}" alt="">
+              </div>
+              <div class="product-details">
+                <span class="product-catagory">Mobile</span>
+                <h4><a href="">IPhone 13 Pro Max</a></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>$96.00</small>$230.99</div>
+                  <div class="product-links">
+                    <a href=""><i class="fa fa-heart"></i></a>
+                    <a href=""><i class="fa fa-shopping-cart"></i></a>
+                  </div>
+                </div>
+              </div>
+    
+          </div>
+          <div class="product-card">
+            <div class="badge new">New</div>
+            <div class="product-tumb">
+              <img src="{% static 'img/pro/airpods.jpg' %}" alt="">
+            </div>
+            <div class="product-details">
+              <span class="product-catagory">Airpods</span>
+              <h4><a href="">Apple Airpods Pro</a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+              <div class="product-bottom-details">
+                <div class="product-price"><small>$96.00</small>$230.99</div>
+                <div class="product-links">
+                  <a href=""><i class="fa fa-heart"></i></a>
+                  <a href=""><i class="fa fa-shopping-cart"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+              <img src="{% static 'img/pro/macair.jpg' %}" alt="">
+            </div>
+            <div class="product-details">
+              <span class="product-catagory">Laptop</span>
+              <h4><a href="">Macbook Air</a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+              <div class="product-bottom-details">
+                <div class="product-price"><small>$96.00</small>$230.99</div>
+                <div class="product-links">
+                  <a href=""><i class="fa fa-heart"></i></a>
+                  <a href=""><i class="fa fa-shopping-cart"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+              <img src="{% static 'img/pro/watch.jpg' %}" alt="">
+            </div>
+            <div class="product-details">
+              <span class="product-catagory">IWatch</span>
+              <h4><a href="">Apple Watch</a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+              <div class="product-bottom-details">
+                <div class="product-price"><small>$96.00</small>$230.99</div>
+                <div class="product-links">
+                  <a href=""><i class="fa fa-heart"></i></a>
+                  <a href=""><i class="fa fa-shopping-cart"></i></a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="badge">Hot</div>
+          <div class="product-tumb">
+            <img src="{% static 'img/pro/tv.png' %}" alt="">
+          </div>
+          <div class="product-details">
+            <span class="product-catagory">Monitor</span>
+            <h4><a href="">Apple Monitor</a></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+            <div class="product-bottom-details">
+              <div class="product-price"><small>$96.00</small>$230.99</div>
+              <div class="product-links">
+                <a href=""><i class="fa fa-heart"></i></a>
+                <a href=""><i class="fa fa-shopping-cart"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="badge">Hot</div>
+          <div class="product-tumb">
+            <img src="{% static 'img/pro/tab.jpg' %}" alt="">
+          </div>
+          <div class="product-details">
+            <span class="product-catagory">Tab</span>
+            <h4><a href="">Apple Tablet</a></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+            <div class="product-bottom-details">
+              <div class="product-price"><small>$96.00</small>$230.99</div>
+              <div class="product-links">
+                <a href=""><i class="fa fa-heart"></i></a>
+                <a href=""><i class="fa fa-shopping-cart"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="badge">Hot</div>
+          <div class="product-tumb">
+            <img src="{% static 'img/pro/14pro.jpg' %}" alt="">
+          </div>
+          <div class="product-details">
+            <span class="product-catagory">Mobile</span>
+            <h4><a href="">IPhone 14 Pro</a></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+            <div class="product-bottom-details">
+              <div class="product-price"><small>$96.00</small>$230.99</div>
+              <div class="product-links">
+                <a href=""><i class="fa fa-heart"></i></a>
+                <a href=""><i class="fa fa-shopping-cart"></i></a>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      <div class="product-card">
+        <div class="badge">Hot</div>
+        <div class="product-tumb">
+          <img src="{% static 'img/pro/13.jpg' %}" alt="">
+        </div>
+        <div class="product-details">
+          <span class="product-catagory">Mobile</span>
+          <h4><a href="">IPhone 14</a></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+          <div class="product-bottom-details">
+            <div class="product-price"><small>$96.00</small>$230.99</div>
+            <div class="product-links">
+              <a href=""><i class="fa fa-heart"></i></a>
+              <a href=""><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="badge">Hot</div>
+        <div class="product-tumb">
+          <img src="{% static 'img/pro/11.jpg' %}" alt="">
+        </div>
+        <div class="product-details">
+          <span class="product-catagory">Mobile</span>
+          <h4><a href="">IPhone 11</a></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+          <div class="product-bottom-details">
+            <div class="product-price"><small>$96.00</small>$230.99</div>
+            <div class="product-links">
+              <a href=""><i class="fa fa-heart"></i></a>
+              <a href=""><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="badge">Hot</div>
+        <div class="product-tumb">
+          <img src="{% static 'img/pro/7.jpg' %}" alt="">
+        </div>
+        <div class="product-details">
+          <span class="product-catagory">Mobile</span>
+          <h4><a href="">IPhone 7</a></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+          <div class="product-bottom-details">
+            <div class="product-price"><small>$96.00</small>$230.99</div>
+            <div class="product-links">
+              <a href=""><i class="fa fa-heart"></i></a>
+              <a href=""><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+    <div class="product-card">
+      <div class="badge">Hot</div>
+      <div class="product-tumb">
+        <img src="{% static 'img/pro/12mini.jpg' %}" alt="">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Mobile</span>
+        <h4><a href="">IPhone 12 Mini</a></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+        <div class="product-bottom-details">
+          <div class="product-price"><small>$96.00</small>$230.99</div>
+          <div class="product-links">
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""><i class="fa fa-shopping-cart"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="badge">Hot</div>
+      <div class="product-tumb">
+        <img src="{% static 'img/pro/se.png' %}" alt="">
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">Mobile</span>
+        <h4><a href="">IPhone SE</a></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+        <div class="product-bottom-details">
+          <div class="product-price"><small>$96.00</small>$230.99</div>
+          <div class="product-links">
+            <a href=""><i class="fa fa-heart"></i></a>
+            <a href=""><i class="fa fa-shopping-cart"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="footer">
+        &#169; 2021 Apple Lt., Developed by Roghith.
+      </div>
+    </div>
+  </body>
+</html>
+
+```
+
+### contact.html:
+```
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Apple</title>
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}" />
+    <link rel="icon" href="https://alchemyimmersive.com/wp-content/uploads/sites/4/2020/04/apple-logo-transparent.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="banner"></div>
+      <div class="menu">
+        <div class="menuitem fill"><a href="/home">Home</a></div>
+        <div class="menuitem fill"><a href="/about">About</a></div>
+        <div class="menuitem fill"><a href="/products">Products</a></div>
+        <div class="menuitem fill"><a href="/people">People</a></div>
+        <div class="menuitem fill"><a href="/contact">Contact Us</a></div>
+      </div>
+      <div class="content p-con">
+        <h1 style="margin:auto;margin-top:50px;font-size:50px;">Contact Us</h1><br><br>
+          <p id="about-p" style="font-size:19px;line-height:33px;"><b>Email: </b>applestore@inc.com<br>
+            <b>Contact Number: </b>+44 467 467 23<br>
+            <b>Facebook: </b>Apple Inc.<br>
+            <b>Instagram: </b>Apple Inc.<br>
+            <b>Linkedin: </b>Apple Inc.<br>
+            <b>Address: </b>One Apple Park Way; Cupertino, CA 95014, U.S.A.<br></p>
+      </div>
+      <div class="footer">
+        &#169; 2021 Apple Lt., Developed by Roghith.
+      </div>
+    </div>
+  </body>
+</html>
+
+```
+
+### layout.css:
+```
+
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 body {
   background-color: whitesmoke;
-  color: #17421d;
 }
+
+#home-h{
+  width: 50%;
+  margin-left: 20px;
+}
+
+h1{
+  font-size:100px;
+  letter-spacing: 1px;
+  width: fit-content;
+}
+
 .container {
   width: 1080px;
-  margin-left: auto;
-  margin-right: auto;
-  border-width: 1px 1px 1px 1px;
-  border-style: solid;
-  box-shadow: 15px 15px 8px gray;
+  margin: auto;
+  margin-top: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  border-radius: 10px;
 }
 
 .banner {
   display: block;
   width: 100%;
-  height: 250px;
+  height: 10px;
   text-align: center;
-  font-style: italic;
   font-size: 60px;
-  background-image: url("/static/css/banner1.png");
-  background-size: 100% 100%;
+  background-image: url("/static/img/applelogo.png");
+  background-size:25%;
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 0px 0px 0px 0px;
-  padding-top: 100px;
-  color: black;
+  padding-top: 150px;
+  border-radius: 5px;
 }
 
 .menu {
@@ -73,56 +697,45 @@ body {
   width: 100%;
   height: 50px;
   font-size: larger;
-  background-color: #32aa15;
+  background-color: #000000;
   text-align: center;
-  padding-top: 15px;
   margin: 0px 0px 0px 0px;
-  border-width: 1px;
 }
 
 .menuitem {
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
-}
-.menuitemselected {
-  display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
-  color: black;
+  height: 100%;
+  padding: 10px;
+  padding-top: 15px;
 }
 
 .menuitem a {
   text-decoration: none;
-  color: #9c1018;
+  color: #fff;
 }
 
 .content {
   display: block;
   width: 100%;
-  background-color: #cffffd;
+  background-color: #ffffff;
   min-height: 500px;
-  margin: 0px 0px 0px 0px;
-  border-width: 1px;
-  border-color: white;
+  border-width: 0.1px;
+  border-color: white white black white;
   border-style: solid;
-}
-.homecontent {
-  min-height: 500px;
-  margin: 10px 10px 10px 10px;
-}
-.homecontent h1 {
-  text-align: left;
-}
-.homecontent img {
-  float: right;
-  width: 400px;
-  height: 300px;
-  margin-left: 10px;
+  background-image: url('/static/img/iPhone.jpg');
+  background-position: right bottom;
+  background-size: 45%;
+  background-repeat: no-repeat;
 }
 
-.contenttext {
-  text-align: justify;
+#home-p{
+  font-size: larger;
+  width: 50%;
+  margin-left: 30px;
+  margin-top: -50px;
+  color: rgb(73, 73, 73);
 }
 
 .productcontent {
@@ -130,376 +743,267 @@ body {
   margin: 10px 10px 10px 10px;
 }
 
-.productcontent h1 {
-  text-align: left;
+a
+{
+    text-decoration: none;
+}
+.p-page{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 70px;
+}
+.product-card {
+    width: 400px;
+    position: relative;
+    box-shadow: 0 2px 7px #dfdfdf;
+    background: #fafafa;
+    margin: auto;
+    margin-bottom: 50px;
 }
 
-.productitems {
-  display: block;
+.badge {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background: red;
+    color: #fff;
+    padding: 3px 10px;
 }
 
-.productitem {
-  display: inline-block;
-  width: 30%;
-  height: 250px;
-  text-align: center;
+.p-con{
+  background: none;
 }
 
-.productitem img {
-  width: 100px;
-  height: 100px;
-  display: block;
-}
-.productitem .itemimage {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100px;
-  margin-bottom: 5px;
+.product-tumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 50px;
+    background: #fff;
 }
 
-.productitem .itemname {
-  display: block;
+.product-tumb img {
+    max-width: 100%;
+    max-height: 100%;
 }
-.productitem .itemprice {
-  display: block;
+
+.product-details {
+    padding: 30px;
+    background-color: rgb(250, 250, 250);
+}
+
+.product-catagory {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(108, 108, 108);
+    margin-bottom: 18px;
+}
+
+.product-details h4 a {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.product-details h4 a:hover {
+    color: #fbb72c;
+}
+
+.product-details p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    color: #999;
+}
+
+.product-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.product-bottom-details div {
+    float: left;
+    width: 50%;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #fbb72c;
+    font-weight: 600;
+}
+
+.product-price small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.product-links {
+    text-align: right;
+}
+
+.product-links a {
+    display: inline-block;
+    margin-left: 5px;
+    color: #e1e1e1;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.product-links a:hover {
+    color: #fbb72c;
+}
+
+.profile-card {
+	width: 300px;
+  margin: auto;
+  margin-bottom: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+	background-color: white;
+	border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.profile-image {
+	position: relative;
+	top: -60px;
+	border-radius: 100px;
+	width: 11rem;
+	height: 11rem;
+  background-image: url('/static/img/shakthi.png');
+	background-position: center;
+	background-size: cover;
+  border:rgb(0, 0, 0) 3px solid; 
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.profile-info {
+	text-align: center;
+	margin-top: -3rem;
+	margin-bottom: 1rem;
+}
+
+.profile-info > .profile-name {
+	color: #212121;
+}
+
+.profile-info > .profile-desc {
+	color: #666666;
+	font-size: 0.9rem;
+}
+
+.status {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	line-height: 1rem;
+	margin-bottom: 1.3rem;
+  padding: 10px;
+}
+
+.status-value {
+	color: #212121;
+	font-weight: 700;
+}
+
+.status-text {
+	font-size: 0.8rem;
+	color: #7c7c7d;
+}
+
+.action {
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn {
+	border: none;
+	padding: 0.8em 1.9em;
+	border-radius: 0.35rem;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.btn-pink {
+	background: #000000;
+	color: white;
+}
+
+.btn-gray-outline {
+	border: 1px solid;
+	background: transparent;
+	color: #000000;
+}
+
+#about-p{
+  padding:0px 70px;
+  line-height: 25px;
 }
 
 .footer {
   display: block;
   width: 100%;
   height: 40px;
-  background-color: #5bb045;
+  background-color: #000;
   text-align: center;
   padding-top: 10px;
   margin: 0px 0px 0px 0px;
-  color: #9c1018;
+  color: #ffffff;
+  border-radius: 0px 0px 10px 10px ;
+}
+
+.fill{
+  transition: all 0.3s ease-in-out;
+}
+
+.fill:hover{
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.fill:hover a{
+  color: black;
 }
 ```
-home.html
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>EduSoft Private Limited</title>
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="icon" href="./img/icon.png" type="image/x-icon" />
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="banner">EduSoft Private Limited</div>
-      <div class="menu">
-        <div class="menuitemselected"><a href="/static/home.html">Home</a></div>
-        <div class="menuitem"><a href="/static/products.html">Products</a></div>
-        <div class="menuitem"><a href="/static/people.html">People</a></div>
-        <div class="menuitem"><a href="/static/contact.html">Contact Us</a></div>
-      </div>
-      <div class="content">
-        <div class="homecontent">
-          <h1>About Us</h1>
-          <img src="./img/building.png" alt="Building" />
-          <div class="contenttext">
-            At Tally, we believe in the power of technology to make business
-            owners efficient, empowered and happier, so they can focus on what
-            matters most for their business. We design our products to focus on
-            just that to make our products work for you, and not the other way
-            around.
-            <br />
-            Our new product TallyPrime takes this to a new level, making your
-            start to automation, or your switch to Tally simpler than ever
-            before. You can now discover the product much more easily and make
-            the product do more for you, without learning anything new. There is
-            greater flexibility as the product adapts to your business and your
-            way of working. And the transformed look and feel will only make you
-            love the product even more.
-            <ul>
-              <li>Simple to learn, easier to use</li>
-              <li>Insightful , actionable & customizable reports</li>
-              <li>Anywhere, anytime and secure access</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer">
-        Copyright &#169; 2023 EduSoft Private Limited, Developed by Prajeeth K T.
-      </div>
-    </div>
-  </body>
-</html>
-```
-products.html
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>EduSoft Private Limited</title>
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="icon" href="./img/icon.png" type="image/x-icon" />
-  </head>
-
-  <body>
-    <div class="container">
-      <div class="banner">EduSoft Private Limited</div>
-      <div class="menu">
-        <div class="menuitem"><a href="/static/home.html">Home</a></div>
-        <div class="menuitemselected">
-          <a href="/static/products.html">Products</a>
-        </div>
-        <div class="menuitem"><a href="/static/people.html">People</a></div>
-        <div class="menuitem"><a href="/static/contact.html">Contact Us</a></div>
-      </div>
-      <div class="content">
-        <div class="productcontent">    
-          <h1>Our Premium Products</h1>
-          <div class="productitems">
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/tally_gold.png" alt="product image">
-                  </div>
-                  <div class="itemname">Tally Gold</div>
-                  <div class="itemprice">Price: Rs.40,000.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/tally_silver.png"  alt="product image">
-                  </div>
-                  <div class="itemname">Tally Silver</div>
-                  <div class="itemprice">Price: Rs.10,000.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/office.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Microsoft Office 2016</div>
-                  <div class="itemprice">Price: Rs.5,499 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/product/1.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Kaspersky Antivirus</div>
-                  <div class="itemprice">Price: Rs.5,750.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/product/2.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Bitdefender Antivirus</div>
-                  <div class="itemprice">Price: Rs.2,500.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/product/3.png"  alt="product image">
-                  </div>
-                  <div class="itemname">Adobe Acrobat Pro</div>
-                  <div class="itemprice">Price: Rs.5,000.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/product/4.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Autocad 2017</div>
-                  <div class="itemprice">Price: Rs.7,500.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/product/5.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Turbocad LTE</div>
-                  <div class="itemprice">Price: Rs.8,000.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/product/6.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Paint Pro</div>
-                  <div class="itemprice">Price: Rs.3,500.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/product/7.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Mcafee Antivirus</div>
-                  <div class="itemprice">Price: Rs.4,200.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/product/8.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Norton Antivirus</div>
-                  <div class="itemprice">Price: Rs.4,000.00 </div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="/static/img/product/9.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Quartus Prime</div>
-                  <div class="itemprice">Price: Rs.5,500.00 </div>
-              </div>
-          </div>
-          </div>        
-      </div>
-      <div class="footer">
-        Copyright &#169; 2023 EduSoft Private Limited, Developed by Prajeeth K T.
-      </div>
-    </div>
-  </body>
-</html>
-```
-people.html
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>EduSoft Private Limited</title>
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="icon" href="./img/icon.png" type="image/x-icon" />
-  </head>
-
-  <body>
-    <div class="container">
-      <div class="banner">EduSoft Private Limited</div>
-      <div class="menu">
-        <div class="menuitem"><a href="/static/home.html">Home</a></div>
-        <div class="menuitem"><a href="/static/products.html">Products</a></div>
-        <div class="menuitemselected">
-          <a href="/static/people.html">People</a>
-        </div>
-        
-        <div class="menuitem"><a href="/static/contact.html">Contact Us</a></div>
-      </div>
-      <div class="content">
-        <div class="productcontent">    
-          <h1>Our PEOPLES</h1>
-          <div class="productitems">
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="blob:https://web.whatsapp.com/fe1946ca-e320-452d-93f8-d1b993440f82" alt="product image">
-                  </div>
-                  <div class="itemname">Prajeeth K T</div>
-                  <div class="itemprice">Founder</div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="./people/6.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Akaash Raj</div>
-                  <div class="itemprice">Post:CEO</div>
-              </div>
-             
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="./people/3.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Pradeep</div>
-                  <div class="itemprice">Post:research director</div>
-              </div>
-            
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="./people/4.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Sivaram</div>
-                  <div class="itemprice">Post: Product designer</div>
-              </div> 
-
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="./people/5.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Sakthivel</div>
-                  <div class="itemprice">Post: manufacturing specialist </div>
-              </div>
-
-               <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="./people/2.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Jayamani</div>
-                  <div class="itemprice">Post: Coordinator</div>
-              </div>
-          </div>        
-      </div>
-      <div class="footer">
-        Copyright &#169; 2023 TCS Private Limited, Developed by Prajeeth K T.
-      </div>
-    </div>
-  </body>
-</html>
-```
-contact.html
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>EduSoft Private Limited</title>
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="icon" href="./img/icon.png" type="image/x-icon" />
-  </head>
-
-  <body>
-    <div class="container">
-      <div class="banner">EduSoft Private Limited</div>
-      <div class="menu">
-        <div class="menuitem"><a href="/static/home.html">Home</a></div>
-        <div class="menuitem"><a href="/static/products.html">Products</a></div>
-        <div class="menuitem"><a href="/static/people.html">People</a></div>
-        <div class="menuitemselected">
-          <a href="/static/contact.html">Contact us</a>
-        </div>
-      </div>
-      <div class="content">
-        <div class="productcontent">    
-          <h1>TO CONTACT US</h1>
-          <div class="productitems">
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="./img/contact/22.jpg" alt="product image">
-                  </div>
-                  <div class="itemname">Call us: </div>
-                  <div class="itemprice">6381366409</div>
-              </div>
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="./img/contact/11.jpg"  alt="product image">
-                  </div>
-                  <div class="itemname">Mail us:</div>
-                  <div class="itemprice">edusoftpvt@gmail.com</div>
-              </div>
-             
-              <div class="productitem"> 
-                  <div class="itemimage">
-                  <img src="./img/contact/2.png"  alt="product image">
-                  </div>
-                  <div class="itemname">Reach us:</div>
-                  <div class="itemprice">Block-87,Gandhi nagar,Chennai-81,Tamilnadu,India.</div>
-              </div>
-             
-
-         </div>        
-      </div>
-      <div class="footer">
-        Copyright &#169; 2023 TCS Private Limited, Developed by Prajeeth K T.
-      </div>
-    </div>
-  </body>
-</html>
-```
-## Server Output:
-![sop](/images/sop.jpg)
-
-## Client Output:
+## OUTPUT:
 
 ### Home Page:
-![home](/images/home.png)
-### Products Page:
-![pro](/images/pro1.png)
-![pro](/images/pro2.png)
-### People Page:
-![pp](/images/people.png)
+![home](https://github.com/MohamedMunthasir/productcompanywebsite/assets/121957086/61e17e5c-4d1c-4074-8373-e872e931cdf3)
+
 ### Contact Page:
-![con](/images/contact.png)
+![output](output/people.png)![contact](https://github.com/MohamedMunthasir/productcompanywebsite/assets/121957086/2dbe6073-4dfa-4d80-9c32-fb1315535795)
+
+
+### People Page:
+
+![output](output/about.png)![people](https://github.com/MohamedMunthasir/productcompanywebsite/assets/121957086/12442a4c-0498-4ffd-ada1-5474c4a65aba)
+
+
+### About Page:
+![output](output/products.png)![about](https://github.com/MohamedMunthasir/productcompanywebsite/assets/121957086/d67fda06-a4ed-4f7a-98ec-0c848e735c01)
+
+### Products Page:
+![products](https://github.com/MohamedMunthasir/productcompanywebsite/assets/121957086/bafce06d-074b-47a0-9ed7-1d8fdc309e12)
+
 
 ## Result:
+
 Thus a website is designed for the software product company and the HTML,CSS code are validated.
